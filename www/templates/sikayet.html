@@ -1,0 +1,29 @@
+<ion-view view-title="ŞİKAYETLER">
+  <ion-content>
+
+
+<div class="card">
+  <div class="item item-divider">
+    <div class="row" >
+    <div class="col">kisi</div>
+    <div class="col">konu</div>
+
+    </div>
+
+  </div>
+  <div class="item item-text-wrap">
+    <div class="row" ng-repeat="sikayet in sikayet ">
+<div class="col">{{sikayet.kisi}}</div>
+  <div class="col">{{sikayet.konu}}</div>
+
+
+  </div>
+  </div>
+  <a href="#/app/sikayetekle" class="button button-block button-balanced">
+Şikayet Et
+</a>
+
+</div>
+
+  </ion-content>
+</ion-view>

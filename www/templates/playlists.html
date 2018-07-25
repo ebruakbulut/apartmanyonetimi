@@ -1,0 +1,31 @@
+<ion-view view-title="Akbulut Apartman">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+  </ion-item>
+    </ion-list>
+
+    <ion-slide-box show-pager="true" does-continue="true" on-slide-changed="slideHasChanged($index)">
+    <ion-slide>
+    <img src="img/resim1.jpg" />
+    </ion-slide>
+    <ion-slide>
+    <img src="img/rsm2.jpg" />
+    </ion-slide>
+    <ion-slide>
+    <img src="" />
+    </ion-slide>
+
+</ion-slide-box>
+
+        <button id ="1" class="button  button-large button-balanced" ng-click="openModal('login')">
+          Kullanıcı Girişi
+        </button>
+
+        <button id="2" class="button button-large button-calm  button-balanced"   ng-click="openModal('login')">
+          Yönetici Girişi
+        </button>
+
+  </ion-content>
+</ion-view>

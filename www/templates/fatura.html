@@ -1,0 +1,34 @@
+<ion-view view-title="GÜNCEL FATURALAR">
+  <ion-content>
+
+
+<div class="card">
+  <div class="item item-divider">
+    <div class="row" >
+
+    <div class="col">Bilgi</div>
+    <div class="col">Fatura Donem</div>
+    <div class="col"> Tutar</div>
+      <div class="col">Son Tarih</div>
+    </div>
+
+  </div>
+  <div class="item item-text-wrap">
+    <div class="row" ng-repeat="fatura in fatura">
+
+  <div class="col">{{fatura.bilgi}}</div>
+  <div class="col">{{fatura.faturadonem}}</div>
+    <div class="col">{{fatura.faturatutar}}</div>
+      <div class="col">{{fatura.faturasontarih}}</div>
+
+
+  </div>
+  </div>
+  <a href="#/app/faturaekle" class="button button-block button-balanced">
+Fatura Ekle
+</a>
+
+</div>
+
+  </ion-content>
+</ion-view>

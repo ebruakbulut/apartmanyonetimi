@@ -1,0 +1,26 @@
+<ion-view view-title="Yeni Fatura">
+  <ion-content >
+      <div class="list" style="padding:10px;">
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Fatura Bilgisi</span>
+    <input type="text" placeholder="Fatura Bilgisi" ng-model="ftr.faturabilgi">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Fatura Dönemi</span>
+    <input type="text" placeholder="Fatura Dönemi(Hangi Ayın Faturası?)" ng-model="ftr.faturadonem" >
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Fatura Dönemi</span>
+    <input type="password" placeholder="Şifre" ng-model="ftr.faturatutar" >
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Fatura Son Ödeme Tarihi</span>
+    <input type="password" placeholder="Fatura Son Ödeme Tarihi" ng-model="ftr.faturasontarih">
+  </label>
+
+  <button class="button button-full button-dark" ng-click="faturaeklee()">
+  Kaydet
+</button>
+  </div>
+  </ion-content>
+</ion-view>

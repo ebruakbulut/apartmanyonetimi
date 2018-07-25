@@ -1,0 +1,26 @@
+<ion-view view-title="Duyurular">
+  <ion-content>
+    <div class="item item-image">
+      <img src="img/duyuru.jpg">
+
+      <div class="card">
+        <div class="item item-divider">
+          <div class="row" >
+
+          <div class="col">Bilgi</div>
+          </div>
+
+        </div>
+        <div class="item item-text-wrap">
+          <div class="row" ng-repeat="duyuru in duyuru">
+
+        <div class="col">{{duyuru.bilgi}}</div>
+              </div>
+        </div>
+        <a href="#/app/duyuruekle" class="button button-block button-balanced">
+    Duyuru Ekle
+      </a>
+    
+
+  </ion-content>
+</ion-view>

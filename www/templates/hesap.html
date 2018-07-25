@@ -1,0 +1,43 @@
+<ion-view view-title="HESAP ÖZETİ">
+  <ion-content>
+  <b>APARTMAN GELİRLERİ </b>
+    <div class="card">
+      <div class="item item-divider">
+        <div class="row" >
+
+        <div class="col">Bilgi</div>
+        <div class="col">Tutar(TL)</div>
+
+        </div>
+
+      </div>
+      <div class="item item-text-wrap">
+        <div class="row" ng-repeat="g in gelir">
+
+      <div class="col">{{g.bilgi}}</div>
+      <div class="col">{{g.tutar}}</div>
+            </div>
+      </div>
+    </div>
+        <b>APARTMAN GİDERLERİ </b>
+
+        <div class="card">
+          <div class="item item-divider">
+            <div class="row" >
+
+            <div class="col">Bilgi</div>
+            <div class="col">Tutar(TL)</div>
+
+            </div>
+
+          </div>
+          <div class="item item-text-wrap">
+            <div class="row" ng-repeat="gid in gider">
+
+          <div class="col">{{gid.bilgi}}</div>
+          <div class="col">{{gid.tutar}}</div>
+                </div>
+          </div>
+        </div>
+  </ion-content>
+</ion-view>

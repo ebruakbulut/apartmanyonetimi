@@ -1,0 +1,34 @@
+<ion-view view-title="Kayıt Ol">
+  <ion-content >
+      <div class="list" style="padding:10px;">
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Adı</span>
+    <input type="text" placeholder="Adı" ng-model="kayit.ad">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Soyadı</span>
+    <input type="text" placeholder="Soyadı" ng-model="kayit.soyad" >
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Şifre</span>
+    <input type="password" placeholder="Şifre" ng-model="kayit.sifre" >
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Şifre Tekrar</span>
+    <input type="password" placeholder="Şifre Tekrar" ng-model="kayit.sifret">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Adres</span>
+    <input type="text" placeholder="Adres" ng-model="kayit.adres" >
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Telefon numarası</span>
+    <input type="text" placeholder="telefon" ng-model="kayit.telefon">
+  </label>
+
+  <button class="button button-full button-balanced" ng-click="kayitol()">
+  Kayıt Ol
+</button>
+  </div>
+  </ion-content>
+</ion-view>
